@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Where is my Country</title>
+</head>
+<body>
+    <div class="container">
+      <h3></h3>
+        <div class="header">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Enter country name">
+                <h3></h3>
+                <button onclick="search()">Search</button>
+            </div>
+            <h3> Where is My Country?</h3>
+            <div class="filter-container">
+                <label for="regionFilter">Filter by Region:</label>
+                <select id="regionFilter" onchange="filterByRegion()">
+                    <option value="all">All</option>
+                    <option value="asia" selected>Asia</option>
+                    <option value="africa">Africa</option>
+                    <option value="americas">Americas</option>
+                    <option value="europe">Europe</option>
+                    <option value="oceania">Oceania</option>
+                </select>
+            </div>
+        </div>
+        <div id="countryCards"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
